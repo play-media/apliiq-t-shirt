@@ -1,0 +1,651 @@
+@charset "UTF-8";
+/* Sample CSS Document */
+.mainContainer,
+header{
+	left:0;
+	width:100%;	
+}
+.mainContainer{
+	padding-top:0;	
+	/* overflow-y: scroll;  has to be scroll, not auto */
+  -webkit-overflow-scrolling: touch;
+}
+.filterWrap{
+	left:-50%;
+	width:50%;	
+}
+
+img.brandMark {
+    display:none;
+}
+
+.print-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.print-section img {
+    width: 100%;
+    max-height: 715px;
+    height: auto;
+    object-fit: contain;
+}
+
+.print-section h5 {
+    line-height: 32px;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 40px;
+}
+
+.print-section .print-section-link {
+    background: #FFA500;
+    padding: 15px 20px;
+    display: block;
+    max-width: 350px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 35px;
+}
+
+.print-section p {
+    font-size: 17px;
+    line-height: 26px;
+}
+
+ul.inkFamily{
+	margin:0 0 35px;
+	width:100%;
+    max-width: 1010px;
+	display:inline-block;
+	text-align:center;
+    padding: 0;
+}
+
+ul.inkFamily li {
+    width: 90%;
+    max-width: 90%;    
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    margin: 25px 0 0;
+    float: none;
+    
+	display:inline-block;	
+	text-align:left;
+	min-height:150px;
+	padding-top:16px;
+	padding-bottom:0px;
+    vertical-align:top;
+}	
+    
+
+ul.inkFamily li h4{
+	font-size:18px;
+	font-size:1.125rem;
+	padding:20px 0;
+	float:left;
+	width:70%;	
+	font-weight:bold;
+}
+ul.inkFamily li p{
+	font-size:12px;
+	font-size:1rem;
+	float:left;
+	width:95%;	
+	color: black;
+	line-height:1.25rem;
+	margin-top:0px;
+	margin-left:15px;
+	padding-right:5px;
+}
+
+ul.iconFamily {
+    margin: 0 0 35px;
+    width: 100%;
+    /* max-width: 1010px; */
+    display: inline-block;
+    text-align: center;
+	padding: 0;
+}
+
+ul.iconFamily li {
+    width: 90%;
+    max-width: 90%;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    margin: 25px 0 0;
+    float: none;
+    display: inline-block;
+    text-align: left;
+    min-height: 175px;
+    padding-top: 16px;
+    padding-bottom: 0px;
+    vertical-align: top;
+}
+
+ul.iconFamily li.iconSet > div {
+    width: 60px;
+    height: 60px;
+    min-height: 100%;
+    display: inline-block;
+    background-image: url('/apliiq-t-shirt/assets/product-landing-sprite.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    float: left;
+    margin-top: 5px;
+}
+
+ul.iconFamily li h4 {
+    font-size: 18px;
+    font-size: 1.125rem;
+    padding: 20px 0;
+    float: left;
+    width: 70%;
+    font-weight: bold;
+}
+
+ul.iconFamily li p {
+    font-size: 12px;
+    font-size: 1rem;
+    float: left;
+    width: 95%;
+    color: black;
+    line-height: 1.25rem;
+    margin-top: 0px;
+    margin-left: 15px;
+    padding-right: 5px;
+}
+
+.center h2 {
+    width: 80%;
+    margin: auto;
+}
+
+.printart > div {
+    background-position: 0 -482px;
+}
+
+.quality > div {
+    background-position: 0 -120px;
+}
+
+.schedule > div {
+    background-position: 0 0;
+}
+
+.minimums > div {
+    background-position: 0 -250px;
+}
+
+.money > div {
+    background-position: 0 -183px;
+}
+
+.ship> div {
+    background-position: 0 -360px;
+}
+
+article {
+	text-align: center;
+    width: 100%;
+    display: inline-block;
+    margin-top: 3%;
+    margin-bottom: 0%;
+}
+
+li.inkIcon{
+    min-width: 100px;
+    height: 22px;
+    display: inline-block;
+    float: left;
+}
+
+
+ul.inkFamily li.inkIcon > div{
+	width:60px;
+	height:60px;
+	display:inline-block;	
+	background-image:url('/apliiq-t-shirt/assets/ink-sprite.png');
+	background-size:100% auto;
+	background-repeat:no-repeat;
+	float:left;
+	margin-top:5px;
+}
+.nometals > div{
+	background-position:0 -269px;
+}
+.nonhaz > div{
+	background-position:0 -336px;
+}	
+.nontoxic > div{
+	background-position:0 -210px;
+}	
+.bio > div{
+	background-position:0 -67px;
+}	
+.organic > div{
+	background-position:0 -137px;
+}	
+.vegan > div{
+	background-position:0 -9px;
+}	
+
+
+
+.imgBg{
+	background-repeat:no-repeat;
+	background-position:center;
+	display:inline-block;
+	position:relative;
+	text-align:center;
+	padding:100px 0;
+	color:white;
+	z-index:0;
+}
+
+.imgBg:before{
+	content:'';
+	background-color:rgba(0,0,0,.40);
+	position:absolute;
+	top:0;bottom:0;left:0;right:0;
+	width:100%;
+	height:100%;
+	z-index:1;
+}
+
+.imgBg hr{
+	position:relative;
+	z-index:1;	
+	width:480px;
+	max-width:90%;
+	float:none;
+	border-top:2px solid white;
+	border-radius:2px;
+	margin:16px auto;
+}
+
+.imgBg h1{
+	font-size:64px;
+	font-size:4rem;
+	line-height:64px;
+	line-height:4rem;
+	position:relative;
+	z-index:1;
+	display:block;
+	margin:16px auto 0;
+}
+.imgBg h2{
+	position:relative;
+	z-index:1;
+	font-size:48px;	
+	font-size:3rem;
+	line-height:48px;
+	line-height:3rem;
+}
+.bar h4{
+	padding-top:16px;	
+}
+.imgBg p{
+	font-size:24px;	
+	font-size:1.5rem;
+	line-height:36px;
+	line-height:2.25rem;
+	color:inherit;
+	z-index:1;
+	position:relative;
+	text-align:inherit;
+	margin:16px 0 32px;
+}
+.imgBg .ghost{
+	position:relative;
+	z-index:1;
+	background-color: #ffffff45;
+	border:2px solid white;	
+	color:inherit;
+	float:none;
+	padding:20px;
+	text-align:inherit;
+	display:block;
+	margin:16px auto;
+	width:480px;
+	max-width:90%;
+	line-height: 24px;
+	line-height:1.5rem;
+    font-size: 18px;
+	font-size:1.125rem;
+}
+
+.full.printing {
+	text-align: center;
+	padding-top: 25px;
+    max-width: 1010px;
+    display: block;
+    margin: 0 auto;
+}
+
+.full,
+.half{
+	width:100%;
+	display:inline-block;
+	background-size:auto 100%;
+}
+
+.half{
+	background-size:cover;
+}
+
+.new-dig h4 {
+	font-size: 34px;
+    position: relative;
+    z-index: 1;
+}
+
+.new-dig p {
+	font-size: 17px;
+    line-height: 23px;
+	min-height: 100px;
+}
+
+.new-dig .ghost {
+	background: #000;
+    color: #fff;
+    text-decoration: none;
+}
+
+/*
+.clickable a {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        text-decoration: none; 
+        z-index: 10; 
+        background-color: #FFF; 
+        opacity: 0; 
+        filter: alpha(opacity=1); 
+    }
+*/
+
+#finalTxt p{
+	display:block;
+	text-align:left;
+	margin:auto;
+}
+#hero{
+	background-image:url('https://www.apliiq.com/Images/digital-t-shirt-printing/t-shirt-printing-banner.jpg');
+	padding: 40px;
+    background-size: cover;
+}
+#hero .print {
+    font-size: 46px;
+}
+#inkType{
+	background-image:url('/apliiq-t-shirt/assets/image\ 6.png');
+	background-size: cover;
+    padding: 120px 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+}
+#inkType >p{
+	color:black;
+	/* font-weight:bolder; */
+}
+#inkType .max-w,
+#results .max-w{
+	max-width: 1030px;
+    margin: 20px auto;
+}
+
+#results {
+	background-image:url('/apliiq-t-shirt/assets/textill\ 1.png');
+	background-size: cover;
+    padding: 120px 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+}
+#results > p,
+#results h2 {
+	color:#fff;
+	font-weight: 400;
+}
+#joggers{
+	background-image:url('/Images/embroidery/embroidered-jogger-example.jpg');
+	min-height:720px;
+}
+#hoodie-printing{
+	background-image:url('/apliiq-t-shirt/assets/hoodie-printing-example.jpg');
+	min-height:720px;
+}
+#hats{
+	background-image:url('/apliiq-t-shirt/assets/digital-hat-printing.jpg');
+	min-height:720px;
+}
+#t-shirt-printing{
+	background-image:url('/apliiq-t-shirt/assets/t-shirt-printing-example.jpg');
+	min-height:720px;
+}
+#sweatshirts{
+	background-image:url('/apliiq-t-shirt/assets/digital-sweatshirt-printing.jpg');
+	min-height:720px;
+}
+#thirdP{
+	background-image:url('/apliiq-t-shirt/assets/3rd-party-1440x180-min.jpg');
+    min-height: 100px;
+    background-size: 90% auto;
+    padding: 0;
+}
+#thirdP:before{
+	background-color:transparent;	
+}
+
+#ink
+
+/* Menu */
+#main-content .bar{
+	margin-top:0;
+	display:inline-block;
+	width:100%;
+	z-index:4;
+	left:0;
+	transition:all .5s ease-in-out;
+	float:left;
+	position: -webkit-sticky; /* for safari */
+   	position: sticky;
+	top:0;
+}
+
+.bar {
+    text-align: center;
+}
+
+.lilGray{
+	background-color:rgba(239,239,239,.9);
+}
+.white{
+	background-color:rgba(255,255,255,.9);
+	border-bottom:3px solid #efefef;
+}
+.bar p{
+	text-align:center;
+		
+}
+.mobile-scroll{
+	-webkit-overflow-scrolling:touch;
+	overflow-x:auto;
+	white-space:nowrap;	
+	height: 150%;	
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+}
+ .listWrap{
+	width: auto;
+	padding-left: 5%;
+	padding-right: 5%;
+	display: inline-block;	
+}
+ .pgNav{
+	width:auto;
+	display:inline-block;
+	text-align:justify;	
+	list-style:none;
+	white-space:nowrap;
+}
+.pgNav li{
+	margin-right:40px;	
+	display:inline-block;
+	vertical-align:top;
+}
+.pgNav li a{
+	margin:10px 0 16px;	
+	text-align:center;
+}
+.horizontalList a,
+.ghost{
+	transition:.25s opacity linear;	
+}
+.icon{
+	height:90px;
+	
+	background-repeat:no-repeat;
+	background-size:100px auto;
+	position:relative;
+	min-width:100px;
+}
+
+#main-content .iconWrp span{	
+	font-size:16px;
+	font-size:1rem;
+    letter-spacing:1px;
+	display:inline-block;
+	min-width:40px;
+	text-align:center;
+}
+
+.bar-img {
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.bar-link {
+    text-decoration: none;
+    color: #000;
+}
+
+.bar-link:hover {
+    opacity: .5;
+    color: #000;
+}
+
+.tshirts{
+	background-image:url(/apliiq-t-shirt/assets/Frame.png);
+}
+/* .hats{
+	background-position:center -319px;
+}
+.hoodie{
+	background-position: center -208px;
+} */
+.joggers{
+	 background-image:url(/apliiq-t-shirt/assets/Frame\ \(2\).png
+}
+.sweatshirt{
+	background-image:url(/apliiq-t-shirt/assets/Frame\ \(3\).png);
+} 
+
+
+/* End Menu */
+
+
+@media screen and (min-width:768px){
+	.filterWrap {
+		left:-25%;
+		width:25%;	
+	}
+	.imgBg{
+		padding:180px 0;	
+	}
+	ul.inkFamily li {
+        width:40%;
+	    max-width:310px;
+        margin: 10px;
+    }
+
+	ul.iconFamily li {
+		width: 40%;
+		max-width: 385px;
+		margin: 10px;
+	}
+
+	#snapback,
+	#fitted,
+	#panel,
+	#embroidery,
+	#campaigns,
+	#trucker,
+	#bucket{
+		min-height:720px;
+		}
+	
+	img.brandMark {
+		width: 50px;
+		height: auto;
+		display: inline-block;
+		margin: 0px 10px 0 0;
+		position: relative;
+		top: 5px;
+	}
+	#hero{
+		padding: 40px;
+		background-size:cover;
+		background-position: center;
+	}
+	
+}
+
+@media screen and (min-width:1025px){
+	.filterWrap{
+		left:-15%;
+		width:15%;	
+	}
+	.horizontalList a:hover,
+	.ghost:hover{
+		opacity:.5;	
+	}
+	.imgBG:hover{
+	background-color:rgba(255,255,255,.20);
+	color:#fff;
+}
+	
+	.half{
+		width:50%;
+		float:left;	
+		background-size:cover;
+	}
+	/* #inkType{
+		background-position:0px -500px;
+	} */
+	
+}
+
+@media screen and (min-width:1280px){
+	#hero{
+		min-height:auto;	
+		padding:40px;
+	}
+	
+	#thirdP{
+		min-height:180px;
+		max-width:1440px;
+	}	
+	
+}
+
